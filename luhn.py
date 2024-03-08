@@ -4,7 +4,6 @@ def verify_card_number(card_number):
     print(card_number_reversed)
     odd_digits = card_number_reversed[::2] # This is a slice that starts at the first element, and takes every second element.
     print(odd_digits)
-
     for digit in odd_digits:
         sum_of_odd_digits += int(digit)
 
