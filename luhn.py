@@ -1,13 +1,16 @@
 def verify_card_number(card_number):
     sum_of_odd_digits = 0
     card_number_reversed = card_number[::-1]
-    odd_digits = card_number_reversed[::2]
+    print(card_number_reversed)
+    odd_digits = card_number_reversed[::2] # This is a slice that starts at the first element, and takes every second element.
+    print(odd_digits)
 
     for digit in odd_digits:
         sum_of_odd_digits += int(digit)
 
     sum_of_even_digits = 0
-    even_digits = card_number_reversed[1::2]
+    even_digits = card_number_reversed[1::2] # This is a slice that starts at the second element, and takes every second element.
+    print(even_digits)
     for digit in even_digits:
         number = int(digit) * 2
         if number >= 10:
